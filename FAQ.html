@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ваш Заголовок</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wine-container {
+            margin-top: 20px;
+        }
+
+        .wine-cell-container {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        .wine-cell {
+            border: 1px solid #dee2e6;
+            margin-top: 20px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .wine-cell-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .expand-btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="Home.html"><img src="путь_к_логотипу" alt="Логотип"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Самовывоз</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">ЧАВО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+
+        <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
+                </path>
+            </svg></a>
+    </nav>
+
+    <div class="wine-container">
+        <div class="wine-cell-container">
+            <a href="another_page.html" style="display: block; margin-top: 50px;">
+                <img src="1.png" alt="Another Image" style="width: 100%; border-radius: 20px;">
+            </a>
+
+            <div class="wine-cell">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>Как я могу оформить заказ?</b></span>
+                    <span class="expand-btn" onclick="toggleContent('content1')">+</span>
+                </div>
+                <div class="wine-cell-content" id="content1">
+                    Вы можете оформить заказ на сайте или по телефону. Необходимо дождаться уведомления о готовности по SMS или e-mail. Наличие товара гарантируется только при выполнении данного условия
+                </div>
+            </div>
+
+            <div class="wine-cell">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>Я заказал товар по одной цене, сейчас цена на сайте изменилась. По какой цене мне достанется товар ?</b></span>
+                    <span class="expand-btn" onclick="toggleContent('content2')">+</span>
+                </div>
+                <div class="wine-cell-content" id="content2">
+                    Цена фиксируется на момент подтверждения заказа и сохраняется на протяжении всего срока резерва. Более подробную информацию можно уточнить у менеджера Вашего заказа
+                </div>
+            </div>
+
+            <div class="wine-cell">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>Как отменить заказ ?</b></span>
+                    <span class="expand-btn" onclick="toggleContent('content3')">+</span>
+                </div>
+                <div class="wine-cell-content" id="content3">
+                    Для отмены заказа необходимо оставить обращение через форму обратной связи или связаться с менеджером по телефону 8 (800) 250-41-58
+                </div>
+            </div>
+
+            <div class="wine-cell">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>Цены на сайте указаны с учётом НДС ?</b></span>
+                    <span class="expand-btn" onclick="toggleContent('content4')">+</span>
+                </div>
+                <div class="wine-cell-content" id="content4">
+                    Все цены на сайте указаны с учётом НДС
+                </div>
+            </div>
+
+            <div class="wine-cell">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>Цена на сайте указана для физических или юридических лиц ?</b></span>
+                    <span class="expand-btn" onclick="toggleContent('content5')">+</span>
+                </div>
+                <div class="wine-cell-content" id="content5">
+                    Цена на сайте актуальна для физических лиц, юридических лиц и ИП, независимо от способа оплаты
+                </div>
+            </div>
+
+            <div class="wine-cell">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>Могу ли я приехать и купить товар без предварительного заказа ?</b></span>
+                    <span class="expand-btn" onclick="toggleContent('content6')">+</span>
+                </div>
+                <div class="wine-cell-content" id="content6">
+                    Необходимо предварительно оформить заказ на сайте или по телефону и дождаться уведомления о готовности. При невыполнении данного условия наличие товара не гарантируется
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        © 2024 Тёма-лох. Все права защищены.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

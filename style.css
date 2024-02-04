@@ -1,0 +1,27 @@
+.wine-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wine-card {
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    height: 300px;
+}
+
+
+.wine-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.wine-inner {
+    padding: 10px;
+}
