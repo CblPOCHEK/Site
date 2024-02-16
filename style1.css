@@ -1,0 +1,29 @@
+.wine-container {
+    margin-top: 20px;
+}
+
+.wine-cell-container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.wine-cell {
+    border: 1px solid #dee2e6;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.wine-cell-content {
+    display: none;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.expand-btn {
+    cursor: pointer;
+}
+
+

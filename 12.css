@@ -1,0 +1,17 @@
+body{
+    margin-top: 150px;
+	background: "1.png" ; 
+	background-attachment: fixed ;
+	background-position: top center;
+}
+
+.mid {
+    border: 1px solid rgba(255, 255, 255, 0.5); /* видимая граница */
+    filter:blur(1px);
+    border-radius: 10px;
+    width: 850px;
+    height: 500px;
+    margin: 150px auto; /* убрал margin-top из body и добавил сюда */
+    background: rgba(255, 255, 255, 0.3); /* изменяем цвет на белый с прозрачностью */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* тень для матового эффекта */
+}

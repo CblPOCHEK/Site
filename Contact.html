@@ -5,45 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ваш Заголовок</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="StyleCon.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="Home.html"><img src="путь_к_логотипу" alt="Логотип"></a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="Home.html"><img src="путь_к_логотипу" alt="Логотип"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="warranty.html">Гарантия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">ЧАВО</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <a class="nav-link text-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"> </path>
+            </svg></a>
+        </nav>
+    </header>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="wine-container">
+        <div class="wine-cell-container">
+            <a href="another_page.html" style="display: block; margin-top: 50px;">
+                <img src="1.png" alt="Another Image" style="width: 100%; border-radius: 20px;">
+            </a>
+        </div>
+    </div>            
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="Catalog.html">Каталог</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="warranty.html">Гарантия</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="FAQ.html">ЧАВО</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Контакты</a>
-                </li>
-            </ul>
+    <div class="black-cell-container">
+        <div class="black-cell">
+            <img src="path/to/your/image1.jpg" alt="Image 1">
+            <p>Большой текст по середине ячейки</p>
+            <p class="gray-text">Надписи серого цвета</p>
         </div>
 
-        <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path
-                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
-                </path>
-            </svg></a>
-    </nav>
+        <div class="black-cell">
+            <img src="path/to/your/image2.jpg" alt="Image 2">
+            <p>Большой текст по середине ячейки</p>
+            <p class="gray-text">Надписи серого цвета</p>
+        </div>
+    </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="bg-light text-black text-center py-3 mt-5">
         © 2024 Тёма-лох. Все права защищены.
     </footer>
 

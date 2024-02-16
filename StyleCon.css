@@ -1,0 +1,56 @@
+.wine-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wine-card {
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.wine-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.wine-inner {
+    padding: 10px;
+}
+
+.black-cell-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.black-cell {
+    background-color: black;
+    border-radius: 20px;
+    padding: 40px; /* Увеличенный отступ внутри ячейки */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 660px; /* Увеличенная ширина ячейки */
+    height: 300px; /* Увеличенная высота ячейки */
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* видимая граница */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3); /* изменяем цвет на белый с прозрачностью */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* тень для матового эффекта */
+}
+
+.gray-text {
+    color: gray;
+}
+

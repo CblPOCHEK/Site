@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ваш Заголовок</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCat.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="Home.html"><img src="путь_к_логотипу" alt="Логотип"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -24,152 +24,111 @@
                     <a class="nav-link" href="Catalog.html">Каталог</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Контакты</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="warranty.html">Гарантия</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="FAQ.html">ЧАВО</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Контакты</a>
-                </li>
             </ul>
         </div>
 
-        <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path
-                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
-                </path>
-            </svg></a>
+        <a class="nav-link text-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
+            </path>
+        </svg></a>
     </nav>
+</header>
 
-    <div class="container mt-5">
-        <h2 class="text-center">Каталог</h2>
-        
-        <div class="row mt-4">
-            <div class="col-lg-4 mb-4">
-                <a href="product1.html" class="text-decoration-none">
-                    <div id="product1" class="card rounded-20">
-                        <img src="path_to_image1.jpg" class="card-img-top" alt="Product 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 1</h5>
-                            <p class="card-text">Цена: $20.00</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+<div class="container mt-5 mx-auto" style="max-width: 1260px;">
+    <h1 class="text-center">Каталог</h1>
     
-            <div class="col-lg-4 mb-4">
-                <a href="product2.html" class="text-decoration-none">
-                    <div id="product2" class="card rounded-20">
-                        <img src="path_to_image2.jpg" class="card-img-top" alt="Product 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 2</h5>
-                            <p class="card-text">Цена: $25.00</p>
-                        </div>
-                    </div>
-                </a>
+    <div class="row mt-4">
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style= "width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
             </div>
-    
-            <div class="col-lg-4 mb-4">
-                <a href="product3.html" class="text-decoration-none">
-                    <div id="product3" class="card rounded-20">
-                        <img src="path_to_image3.jpg" class="card-img-top" alt="Product 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 3</h5>
-                            <p class="card-text">Цена: $30.00</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        </a>
 
-        <div class="row mt-4">
-            <div class="col-lg-4 mb-4">
-                <a href="product4.html" class="text-decoration-none">
-                    <div id="product4" class="card rounded-20">
-                        <img src="path_to_image4.jpg" class="card-img-top" alt="Product 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 4</h5>
-                            <p class="card-text">Цена: $20.00</p>
-                        </div>
-                    </div>
-                </a>
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
             </div>
-    
-            <div class="col-lg-4 mb-4">
-                <a href="product5.html" class="text-decoration-none">
-                    <div id="product5" class="card rounded-20">
-                        <img src="path_to_image5.jpg" class="card-img-top" alt="Product 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 5</h5>
-                            <p class="card-text">Цена: $25.00</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="col-lg-4 mb-4">
-                <a href="product6.html" class="text-decoration-none">
-                    <div id="product6" class="card rounded-20">
-                        <img src="path_to_image6.jpg" class="card-img-top" alt="Product 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 6</h5>
-                            <p class="card-text">Цена: $30.00</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        </a>
 
-        <div class="row mt-4">
-            <div class="col-lg-4 mb-4">
-                <a href="product7.html" class="text-decoration-none">
-                    <div id="product4" class="card rounded-20">
-                        <img src="path_to_image7.jpg" class="card-img-top" alt="Product 7">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 7</h5>
-                            <p class="card-text">Цена: $20.00</p>
-                        </div>
-                    </div>
-                </a>
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
             </div>
-    
-            <div class="col-lg-4 mb-4">
-                <a href="product8.html" class="text-decoration-none">
-                    <div id="product8" class="card rounded-20">
-                        <img src="path_to_image8.jpg" class="card-img-top" alt="Product 8">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 8</h5>
-                            <p class="card-text">Цена: $25.00</p>
-                        </div>
-                    </div>
-                </a>
+        </a>
+
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
             </div>
-    
-            <div class="col-lg-4 mb-4">
-                <a href="product9.html" class="text-decoration-none">
-                    <div id="product9" class="card rounded-20">
-                        <img src="path_to_image9.jpg" class="card-img-top" alt="Product 9">
-                        <div class="card-body">
-                            <h5 class="card-title">Название товара 9</h5>
-                            <p class="card-text">Цена: $30.00</p>
-                        </div>
-                    </div>
-                </a>
+        </a>
+
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽0</p>
             </div>
-        </div>
+        </a>
+
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
+            </div>
+        </a>
+
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
+            </div>
+        </a>
+
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
+            </div>
+        </a>
+
+        <a href="product_page.html" class="wine-card">
+            <div class="wine-inner">
+                <img class="wine-img" src="716.webp" style="width: 200px; height: 200px;" alt="Product 1">
+                <p class="text-center font-weight-bold mb-0">RTX 4070 12Gb</p>
+                <p class="text-center">Цена: 71 550 ₽</p>
+            </div>
+        </a>
+
     </div>
+</div>
 
-    <!-- Добавьте другие контейнеры и продукты по необходимости -->
+<footer class="bg-light text-black text-center py-3 mt-5">
+    © 2024 Тёма-лох. Все права защищены.
+</footer>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        © 2024 Тёма-лох. Все права защищены.
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
